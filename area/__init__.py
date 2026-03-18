@@ -5,7 +5,10 @@ class Area:
     def __init__(self, name: str, rect: pg.Rect):
         self.name = name
         self.rect = rect
-        self.surface = pg.Surface((rect.width, rect.height))
+        self.surface = pg.Surface(self.rect.size)
+
+    def resize_surface(self):
+        self.surface = pg.Surface(self.rect.size)
 
     def initialize(self, app):
         pass
@@ -14,4 +17,4 @@ class Area:
         pass
 
     def draw(self, app):
-        pass
+        self.surface.fill((0, 0, 0))

@@ -1,9 +1,11 @@
+import pygame as pg
+
 from area import Area
 
 
 class Viewport(Area):
-    def __init__(self, area):
-        super().__init__("Viewport", area)
+    def __init__(self, rect):
+        super().__init__("Viewport", rect)
 
     def initialize(self, app):
         pass
@@ -12,4 +14,4 @@ class Viewport(Area):
         pass
 
     def draw(self, app):
-        pass
+        self.surface.fill((0, 0, 0))
