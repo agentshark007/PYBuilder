@@ -1,9 +1,11 @@
 import pygame as pg
 
+from areas import viewport
+
 
 class App:
     def initialize(self):
-        pass
+        self.area_options = [viewport.Viewport]
 
     def update(self):
         pass
