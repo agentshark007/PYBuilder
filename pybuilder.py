@@ -1,5 +1,6 @@
 import pygame as pg
 
+
 class App:
     def initialize(self):
         pass
@@ -21,7 +22,6 @@ class App:
             for event in pg.event.get():
                 if event.type == pg.QUIT:
                     running = False
-            self.handle_input()
             self.update()
             self.draw()
             pg.display.flip()

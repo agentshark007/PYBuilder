@@ -1,0 +1,12 @@
+# PyCache
+__pycache__/
+
+# PyInstaller
+dist/
+build/
+
+# VENV
+.venv/
+
+# PyCharm
+.idea/
