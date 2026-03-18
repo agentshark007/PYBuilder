@@ -1,9 +1,9 @@
-from areas import Area
+from area import Area
 
 
 class Viewport(Area):
-    def __init__(self):
-        super().__init__("Viewport")
+    def __init__(self, area):
+        super().__init__("Viewport", area)
 
     def initialize(self, app):
         pass
