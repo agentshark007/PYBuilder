@@ -4,6 +4,8 @@ import pygame as pg
 class Area:
     def __init__(self, name: str, rect: pg.Rect):
         self.name = name
+        self.frame_rect = rect.copy()
+        self.bar_rect = rect.copy()
         self.rect = rect
         self.surface = pg.Surface(self.rect.size)
 
